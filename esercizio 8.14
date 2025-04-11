@@ -1,0 +1,18 @@
+# esercizio 8.14
+
+
+
+def make_car(casa_produttrice:str,modello:str,**kwargs):
+    i=0
+    output=f"{casa_produttrice} {modello} "
+    for k ,v in kwargs.items():
+        output+=f" {k} {v} "
+
+    if i < len(kwargs)-1:
+        output+=" , "
+        i+=1
+        return output
+    
+
+output=make_car("nissan","skyline gtr r 34",anno=1999,potenza=280)
+print(output)
