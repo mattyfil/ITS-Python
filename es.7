@@ -1,0 +1,4 @@
+from typing import Callable
+parole=["cane","gatto","elefante","ratto"]
+list_parole_lunghe:list[str]=list(filter(lambda x: len(x)> 4,parole))
+print(*list_parole_lunghe)
