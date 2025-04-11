@@ -1,0 +1,19 @@
+class Persona:
+    def __init__(self, name , age ):
+        self.name=name
+        self.age=age
+    def presentazione(self):
+        return f"(name: {self.name},age {self.age})"
+mini=400
+min_nome=""
+alice=Persona("Alice",18)
+bob=Persona("bob",20)
+sofia=Persona("sofia",16)
+sof=Persona("sofiona",10)
+dormigliona=Persona("dormigliona",19)
+person:dict= {"ALICE":18 ,"bob":20,"sofia":16,"sofiona":10,"dormigliona":19}
+for k,v in person.items():
+    if v<mini:
+        mini=v
+        min_nome=k
+print(min_nome,mini)
