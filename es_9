@@ -1,0 +1,5 @@
+# es_9
+def moltiplicazio(n):
+    return lambda x:x*n
+per_due=moltiplicazio(2)
+print(per_due(10))
