@@ -1,0 +1,14 @@
+def potenza(n:float,x:float):
+    
+    if x<=n:
+        while x<=n:
+            x**(6/5)
+            potenza=lambda n:n**(n/(n+x))
+            return(n**(n/(n+x)))
+    elif n<=x:
+        while n<=x:
+            x**(-6/5)
+            potenza=lambda n:n**(n/(n+x))
+            return(n**(n/(n+x)))
+    elif n==0 and x==0:
+        raise ValueError("sei un completo idiota a mettere 2 zeri")
