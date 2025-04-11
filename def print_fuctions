@@ -1,0 +1,10 @@
+def print_fuctions(a:int,b:int)->int:
+    if a>b:
+        i=b
+        sum=0
+        for b in range (a):
+            sum+=i
+            i+=1
+        return sum
+sum=print_fuctions(10,2)
+print(f"{sum}")
