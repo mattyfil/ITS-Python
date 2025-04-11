@@ -1,0 +1,4 @@
+from typing import Callable
+studenti:list=[{"nome":"anna" , "media":28},{"nome":"luca" , "media":25},{"nome":"marco" , "media":30}]
+studente_decrescente=sorted(studenti,key=lambda x:x["media"],reverse=True)
+print(studente_decrescente)
