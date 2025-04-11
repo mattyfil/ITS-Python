@@ -1,0 +1,5 @@
+from typing import Callable
+pari_o_disparo:Callable[[int],str]=lambda x: "pari" if x%2==0 else\
+    "disparo"
+print(pari_o_disparo(19))
+print(pari_o_disparo(8))
