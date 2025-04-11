@@ -1,0 +1,36 @@
+class Animal:
+
+    
+    def  __init__(self,name,leg)->str:
+        self.name=name
+        self.leg=leg
+        print(self.name,self.leg)
+    
+    
+    def setLegs(self,new_leg):
+        self.leg=new_leg
+        print (new_leg)
+    
+    
+    def getLegs(self):
+        return self.leg
+    
+ 
+
+    def print_info(self,):
+        print(self.name,self.leg,)
+
+
+    
+        
+    
+    
+        
+    
+
+cane = Animal("pluto", 4)
+coniglio=Animal("LOLA",4)
+cane.print_info
+cane.setLegs(150)
+cane.print_info
+coniglio.print_info
