@@ -1,0 +1,5 @@
+from typing import Callable
+from functools import reduce
+numeri:list[int]=[2,3,4]
+moltiplicazione:Callable[[int,int],int]=reduce(lambda x,y:x*y,numeri)
+print(moltiplicazione)
