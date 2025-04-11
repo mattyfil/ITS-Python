@@ -1,0 +1,26 @@
+class Student:
+    def __init__(self, name:str, program_student:str,age:int,gerder:str):
+        self.name=name
+        self.program_student=program_student
+        self.age=age
+        self.gerder=gerder
+        
+        
+
+    def printInfo(self,*args):
+        print(f"{self.name} {self.program_student} {self.age} {self.gerder}")
+
+
+Mattia=Student("mattia","informatica",24,"maschio")
+naso=Student("sofia","matematica",16,"rimbambita")
+imbranato=Student("marco","industria 4.0",25,"non indentificato")
+
+
+
+
+
+Mattia.printInfo("mattia","informatica",24,"maschio")
+
+naso.printInfo("sofia","matematica",16,"rimbambita")
+
+imbranato.printInfo("marco","industria ",25,"maschio")
