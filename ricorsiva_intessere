@@ -1,0 +1,10 @@
+def compoundinterest(m:float,t:int)->float:
+   
+    if m==0:
+        return 0
+    elif t==0:
+        return m
+    else:
+        return  round (1.005*compoundinterest(m,t-1),2)
+
+print((compoundinterest(65000,12)))
